@@ -8,6 +8,8 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
     private int size = 0;
 
     private void addFirst(E item) {
+        head = new Node<>(item, head);
+        size++;
     }
 
     @Override
