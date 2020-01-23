@@ -4,6 +4,14 @@ import adt.LinkedListADT;
 
 public class MyLinkedList<E> implements LinkedListADT<E> {
 
+    private Node<E> head = null;
+    private int size = 0;
+
+    @Override
+    public void add(int index, E item) {
+
+    }
+
     private static class Node<E> {
         private E data;
         private Node<E> next;
@@ -24,10 +32,5 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
         private Node<E> getNext() {
             return next;
         }
-    }
-
-    @Override
-    public void add(int index, E item) {
-
     }
 }
