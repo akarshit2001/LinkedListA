@@ -8,4 +8,6 @@ public interface LinkedListADT<E> {
     int search(E item);
 
     void sort();
+
+    void print();
 }
